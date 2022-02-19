@@ -1,0 +1,40 @@
+
+<div class="container-details">
+
+
+
+<img src="{{response.image}}" alt="image-movie"/>
+
+<div id="container-description">
+<a href="/movies">Go back</a>
+<h2>{{response.title}}</h2>
+
+<h3>{{response.director}}</h3>
+
+<h3>Stars</h3>
+    <ul>{{#each response.stars}}
+        <li>{{this}}</li>
+        {{/each}}
+    </ul>
+            
+
+<p>{{response.description}}</p>
+
+<p>{{#each response.showtimes}}
+        {{this}} |
+    {{/each}}
+</p>
+</div>
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
